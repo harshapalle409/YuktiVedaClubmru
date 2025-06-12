@@ -1,0 +1,113 @@
+.yvclub-about-main-section{
+    background-color: #f9f9f9;
+
+}
+.yvclub-about-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+  /* background-color: #f9f9f9; */
+  max-width: 1200px; /* Set a max-width */
+  margin: 0 auto; /* Center the section */
+  gap: 2px; /* Space between left and right containers */
+  /* flex-wrap: wrap; Allows wrapping on smaller screens */
+  width: 75%;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  Font: 1rem;
+  line-height : 1.7;
+
+}
+
+.yvclub-about-section h2{
+    color: #a67c00;
+    font-weight: 1200;
+
+}
+.yvclub-about-section p{
+    color: #495057;
+
+}
+
+.yvclub-about-section > div {
+  flex: 1 1 500px;
+  padding: 20px;
+}
+
+.yvclub-about-left-container,
+.yvclub-about-right-container {
+  /* background-color: white; */
+  border-radius: 16px;
+  /* box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1); */
+  padding: 30px;
+  /* margin: 10px; */
+  align-self: start;
+}
+
+.yvclub-about-title {
+  font-size: 28px;
+  /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+  margin-bottom: 16px;
+  color: #1e2a30;
+}
+
+.yvclub-about-description {
+  font-family: 'Georgia', 'Times New Roman', serif;
+  font-size: 12px;
+  line-height: 1.5;
+  letter-spacing: 0.2px;
+  word-spacing: 0.2px;
+  text-align: justify;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+
+.yvclub-about-right-container img {
+  width: 100%;
+  border-radius: 12px;
+  object-fit: cover;
+  margin-top: 20px;
+}
+.yvclub-about-buttons {
+  display: flex;
+  gap: 16px;
+  margin-top: 20px;
+}
+
+.yvclub-about-button {
+  color: #2B2134;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 60px ;
+  border: 2px solid #D4AF37;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.yvclub-about-button:hover {
+  background-color:#D4AF37; 
+}
+
+/* Responsive Mobile View */
+@media (max-width: 768px) {
+  .yvclub-about-section {
+    flex-direction: column;
+    padding: 12px;
+    margin: unset;
+    width: auto;
+  }
+
+  .yvclub-about-left-container,
+  .yvclub-about-right-container {
+    padding: 20px;
+  }
+
+  .yvclub-about-title {
+    font-size: 24px;
+  }
+
+  .yvclub-about-description {
+    font-size: 15px;
+  }
+}

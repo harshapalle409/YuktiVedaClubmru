@@ -1,0 +1,124 @@
+.club_footer__root {
+  background-color: #290933;   /*#FF6B35 */
+  color: #D4AF37;
+  padding: 40px 20px 20px;
+  font-family: 'Segoe UI', sans-serif;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.club_footer__top_section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.club_footer__column {
+  flex: 1 1 250px;
+  /* font-family: poppins; */
+  color: white;
+  font-style: bold;
+}
+
+.club_footer__heading {
+  color: #f5d488;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.club_footer__column ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.club_footer__column li {
+  margin: 4px 0;
+  color: #EAEAEA;
+}
+
+.club_footer__icon {
+  margin-right: 8px;
+}
+.footer-logo-image{
+  height: 75%;
+  width: 55%;
+}
+
+.club_footer__social_section {
+  border-top: 1px solid #444;
+  border-bottom: 1px solid #444;
+  padding: 15px 0;
+  text-align: center;
+  color: white;
+}
+
+.club_footer__social_icons {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  font-size: 20px;
+  color: #f5d488;
+}
+
+.club_footer__bottom_section {
+  text-align: center;
+  margin-top: 15px;
+  color: #A098A8;
+  font-size: 14px;
+}
+.footer_link{
+  color: inherit;         /* Inherits color from parent */
+  text-decoration: none;  /* Removes underline */
+}
+.footer_link:hover{
+    color: #D4AF37;
+}
+.club_footer__email {
+  color: #eee;
+  text-decoration: none;
+}
+
+.club_footer__email:hover {
+  text-decoration: underline;
+  color: #D4AF37;
+}
+.club_footer__column p {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #eee;
+  font-size: 0.95rem;
+  margin-bottom: 10px;
+}
+
+.club_footer__icon {
+  color: #fff;
+  font-size: 1.1rem;
+}
+
+.club_footer__social_section {
+  text-align: center;
+  margin-top: 30px;
+  color: #ccc;
+}
+
+.club_footer__social_icons {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.club_footer__social_icons a {
+  color: #fff;
+  font-size: 1.5rem;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.club_footer__social_icons a:hover {
+  color: #D4AF37; /* LinkedIn blue, Instagram pink, or custom on hover */
+  transform: scale(1.2);
+}

@@ -1,0 +1,89 @@
+.navbar_unique_wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #290933;    /* #2B2134 */
+  color: #F1F1F1;
+  padding: 0rem 2rem;
+  
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+.navber-logo-and-name {
+  display: flex;
+  align-items: center; /* Add this line */
+}
+
+.navber-logo-image {
+  height: 22%;
+  width: 22%;
+}
+.navber-logo-image {
+  margin-right: 2rem; /* Add spacing between logo and text */
+  /* margin-left: 2rem; */
+}
+.navbar_unique_logo {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.navbar_unique_toggle {
+  display: none;
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+
+.navbar_unique_links {
+  display: flex;
+  gap: 1.5rem;
+  list-style: none;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.navbar_unique_links li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.navbar_unique_links li a:hover {
+  color: #D4AF37; /* Golden color on hover */
+}
+
+.navbar_unique_links li a.active {
+  color: #D4AF37; /* Amber color for active/current page */
+  font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  .navbar_unique_toggle {
+    display: block;
+  }
+
+  .navbar_unique_links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    right: 0;
+    background-color: #FF6B35;
+    padding: 1rem 0;
+  }
+
+  .navbar_unique_links.show {
+    display: flex;
+  }
+
+  .navbar_unique_links li {
+    text-align: center;
+    padding: 0.5rem 0;
+  }
+  .navbar_unique_links li a {
+    display: block;
+    cursor: pointer;
+  }
+}

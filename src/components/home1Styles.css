@@ -1,0 +1,297 @@
+.yvclub-home-container {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.yvclub-home-hero {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+/* Overlay fade effect */
+.yvclub-home-hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.9);
+  opacity: 0;
+  animation: yvclub-overlayFade 2s ease-out 0.2s forwards;
+  pointer-events: none;
+  z-index: 0;
+}
+
+@keyframes yvclub-overlayFade {
+  0% { opacity: 0; }
+  50% { opacity: 0.1; }
+  100% { opacity: 0; }
+}
+
+/* Main slogan */
+.yvclub-home-main-slogan {
+  font-size: 5rem;
+  color: #a67c00;
+  line-height: 1.2;
+  margin-top: -10rem;
+  opacity: 0;
+  transform: translateY(50px);
+  animation: yvclub-slideInUp 1s ease-out 0.3s forwards, yvclub-pulse 4s ease-in-out 3s infinite;
+  position: relative;
+  z-index: 2;
+}
+
+/* Subtext */
+.yvclub-home-subtitle {
+  font-size: 1.5rem;
+  color: #7d5f04;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  opacity: 0;
+  transform: translateY(30px);
+  animation: yvclub-slideInUp 1s ease-out 0.6s forwards;
+  position: relative;
+  z-index: 2;
+}
+
+/* CTA */
+.yvclub-home-cta {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  opacity: 0;
+  transform: translateY(40px);
+  animation: yvclub-slideInUp 1s ease-out 0.9s forwards;
+  position: relative;
+  z-index: 2;
+}
+
+/* Button shine effect */
+.yvclub-home-btn-primary::before,
+.yvclub-home-btn-secondary::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+  transition: left 0.6s;
+}
+
+.yvclub-home-btn-primary:hover::before,
+.yvclub-home-btn-secondary:hover::before {
+  left: 100%;
+}
+
+.yvclub-home-btn-primary,
+.yvclub-home-btn-secondary {
+  background-color: #ffb700;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 16px;
+  transition: all 0.4s;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-decoration: none;
+  position: relative;
+  overflow: hidden;
+  min-width: 150px;
+}
+
+.yvclub-home-btn-secondary {
+  background-color: transparent;
+  border: 2px solid #ffb700;
+  color: #ffb700;
+}
+
+.yvclub-home-btn-primary:hover,
+.yvclub-home-btn-secondary:hover {
+  background-color: #a67c00;
+  color: white;
+  transform: translateY(-3px) scale(1.02);
+  box-shadow: 0 8px 20px rgba(166, 124, 0, 0.3);
+}
+
+/* Button active state */
+.yvclub-home-btn-primary:active,
+.yvclub-home-btn-secondary:active {
+  transform: translateY(-1px) scale(1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: all 0.1s;
+}
+
+.yvclub-home-cursor {
+  color: #ffb700;
+  animation: yvclub-blink 1s infinite;
+}
+
+.yvclub-home-top-header {
+  position: fixed;
+  /* top: 60px; */
+  left: 0;
+  width: 100%;
+  background: #D4AF37; /*rgba(194, 159, 53, 0.95); */
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+  font-weight: 600;
+  font-size: 1.2rem;
+  letter-spacing: 2px;
+  z-index: 1000;
+  backdrop-filter: blur(5px);
+  opacity: 0;
+  transform: translateY(-100%);
+  animation: yvclub-slideDown 1s ease-out 0.2s forwards;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Running text styles */
+.yvclub-home-running-text-container {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  z-index: 1;
+  opacity: 0.2;
+  transform: translateY(-50%);
+}
+
+.yvclub-home-running-text {
+  display: inline-block;
+  white-space: nowrap;
+  padding-left: 100%;
+  animation: yvclub-marquee 20s linear infinite;
+  font-size: 15rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: rgba(166, 124, 0, 0.15);
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+}
+
+@keyframes yvclub-marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-100%); }
+}
+
+/* Keyframes */
+@keyframes yvclub-slideInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes yvclub-slideDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes yvclub-blink {
+  0%, 50% { opacity: 1; }
+  51%, 100% { opacity: 0; }
+}
+
+@keyframes yvclub-pulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.03);
+  }
+}
+
+/* Floating animation for buttons */
+@keyframes yvclub-float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+}
+
+.yvclub-home-btn-primary {
+  animation: yvclub-float 3s ease-in-out infinite;
+  animation-delay: 2s;
+}
+
+.yvclub-home-btn-secondary {
+  animation: yvclub-float 3s ease-in-out infinite;
+  animation-delay: 2.5s;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .yvclub-home-main-slogan {
+    font-size: 3rem;
+    margin-top: -4rem;
+  }
+
+  .yvclub-home-subtitle {
+    font-size: 1.2rem;
+  }
+
+  .yvclub-home-cta {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .yvclub-home-btn-primary,
+  .yvclub-home-btn-secondary {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .yvclub-home-top-header {
+    font-size: 1rem;
+    padding: 12px 0;
+  }
+
+  .yvclub-home-running-text {
+    font-size: 8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .yvclub-home-main-slogan {
+    font-size: 2.5rem;
+    padding: 4rem 1rem;
+  }
+
+  .yvclub-home-top-header {
+    font-size: 0.9rem;
+    padding: 10px 0;
+  }
+
+  .yvclub-home-running-text {
+    font-size: 5rem;
+  }
+}

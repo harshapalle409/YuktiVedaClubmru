@@ -1,0 +1,136 @@
+/* Main Section */
+.initiatives_main_section {
+  padding: 40px 20px;
+  text-align: center;
+  background-color: #f9f9f9;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.initiatives_main_section > h2 {
+  font-size: 2rem;
+  color: #212529;
+  margin-bottom: 10px;
+  font-family:Poppins;
+}
+.des{
+  font-family: lora;
+   font-weight: regular weight;
+  font-size:1.1rem;
+  color:#495057;
+  line-height: 1.7;
+}
+.initiatives_main_section > p {
+  max-width: 800px;
+  margin: 0 auto 30px auto;
+  color: #444;
+  line-height: 1.6;
+  font-size: 1rem;
+}
+
+/* Event Posters Section */
+.opportunity-section {
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+/* Individual Card */
+/* Individual Card */
+.opportunity-card {
+  display: flex;
+  flex-direction: row; /* <== Explicitly set this */
+  background-color: #f9f9f9;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  align-items: stretch;
+  flex-wrap: nowrap; /* <== Prevent wrapping */
+}
+
+/* Left Section (Poster) */
+.opportunity-left {
+  flex: 1;
+  min-width: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+  min-height: 200px;
+  border-radius: 12px;
+}
+
+/* Right Section (Text) */
+.opportunity-right {
+  flex: 1;
+  min-width: 80%;
+  padding: 20px;
+  background-color: #fff;
+  text-align: left;  
+  border-radius: 12px;
+
+}
+.h3{
+  font-size:Poppins;
+  font-family:poppins;
+  font-weight: 600;
+}
+.opportunity-left-img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  display: block;
+}
+
+/* Color backgrounds for placeholders */
+.poster-placeholder {
+  background-color: #ddd;
+}
+.purple-bg {
+  /* background-color: #7541ec; */
+}
+.dark-bg {
+  background-color: #222;
+}
+
+/* Right Section (Text) */
+
+
+.opportunity-right h3 {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  margin-bottom: 10px;
+  font-size: 1.3rem;
+  color: #222;
+}
+
+.opportunity-right p {
+  width: 93%;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 1rem;
+  line-height: 1.4;
+  color: #333;
+  text-align: justify;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .opportunity-card {
+    flex-direction: column;
+  }
+
+  .opportunity-left,
+  .opportunity-right {
+    width: 100%;
+  }
+
+  .opportunity-right {
+    padding: 16px;
+  }
+
+  .opportunity-left-img {
+    width: 80%;
+  }
+}

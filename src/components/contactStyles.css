@@ -1,0 +1,187 @@
+.contact-main-container{
+  background: #f9f9f9;
+}
+.heading{
+  color: #212529;
+  font-size: 2rem;
+  text-align: center;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.heading2{
+  color: #212529;
+  font-size: 1.5rem;
+  text-align: center;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.contact-cards-main-container {
+  padding: 0px 120px; /* Reduced horizontal padding to decrease card spacing */
+  min-height: 50vh;
+}
+
+.top-two-cards-container {
+  padding: 0 200px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 24px;
+  margin-bottom: 40px;
+}
+
+.grid-cards-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Default for desktop */
+  gap: 24px;
+  justify-items: center;
+  padding: 0 10px;
+}
+
+/* CONTACT FORM */
+.yvclub_contact_right_section {
+  max-width: 600px;
+  /* width: 100%; */
+  margin: 0 auto;
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+}
+
+.yvclub_contact_section_title {
+  text-align: center;
+  font-size: 1.8rem;
+  margin-bottom: 30px;
+  color: #212529;
+  border-bottom: 2px solid #212529;
+  padding-bottom: 10px;
+}
+
+.yvclub_contact_form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.yvclub_contact_form_input,
+.yvclub_contact_form_textarea {
+  width: 100%;
+  padding: 12px 16px;
+  border: 1px solid #F1F1F1;
+  border-radius: 6px;
+  font-size: 1rem;
+  background: #f9fdfe;
+  color: #212529;
+  box-sizing: border-box;
+}
+
+.yvclub_contact_form_input::placeholder,
+.yvclub_contact_form_textarea::placeholder {
+  color: #D4AF37;
+}
+
+.yvclub_contact_form_input:focus,
+.yvclub_contact_form_textarea:focus {
+  outline: none;
+  border-color: #212529;
+  box-shadow: 0 0 0 2px rgba(76, 201, 240, 0.2);
+}
+
+.yvclub_contact_form_textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.yvclub_contact_submit_button {
+  background: #290933;
+  color: white;
+  padding: 14px;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+  text-transform: uppercase;
+  width: 150px;
+  display: block;
+  margin: 20px auto 0 auto;
+}
+
+.yvclub_contact_submit_button:hover {
+  color: #D4AF37;
+}
+
+.yvclub_contact_submit_button:disabled {
+  background: #b0c5d6;
+  cursor: not-allowed;
+}
+
+.yvclub_contact_submit_message {
+  margin-top: 15px;
+  padding: 12px;
+  text-align: center;
+  border-radius: 6px;
+  font-size: 0.95rem;
+}
+
+.yvclub_contact_submit_message.success {
+  background: #d4edda;
+  color: #155724;
+}
+
+.yvclub_contact_submit_message.error {
+  background: #f8d7da;
+  color: #721c24;
+}
+
+
+/* Tablet view */
+@media (max-width: 768px) {
+  .contact-cards-main-container {
+    padding: 30px 20px; /* Override to smaller padding */
+  }
+
+  .top-two-cards-container {
+    padding: 0 20px; /* Override large padding */
+  }
+
+  .grid-cards-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Mobile view */
+@media (max-width: 480px) {
+  .contact-cards-main-container {
+    padding: 20px 10px;
+  }
+
+  .top-two-cards-container {
+    padding: 0 10px;
+  }
+
+  .grid-cards-container {
+    grid-template-columns: repeat(2, minmax(140px, 1fr)); /* Reduced size for better fit */
+    gap: 16px; /* Optional: reduce gap for tight space */
+    padding: 0 10px;
+    justify-items: center;
+  }
+}
+
+  .yvclub_contact_right_section {
+    padding: 15px;
+  }
+
+  .yvclub_contact_section_title {
+    font-size: 1.5rem;
+  }
+
+
+/* Small devices */
+@media (max-width: 480px) {
+  .yvclub_contact_submit_button {
+    font-size: 0.95rem;
+    width: 100%;
+  }
+}

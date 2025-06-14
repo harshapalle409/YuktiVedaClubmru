@@ -22,7 +22,7 @@ const Initiatives = () => {
             <h3>Inauguration: Yukti Veda Club</h3>
             <p>
               The <strong>Yukti Veda Club</strong>, the official Entrepreneurship and Startup Club of
-              Malla Reddy University, was successfully inaugurated on <strong>June 1st, 2025</strong>.
+              Malla Reddy University, was successfully inaugurated on <strong>April 11th, 2025</strong>.
               This club is a platform to foster innovation, entrepreneurship, and real-world problem-solving
               among students. The inauguration marked the beginning of a journey to build a strong community
               of future founders and changemakers at MRU.
@@ -36,13 +36,15 @@ const Initiatives = () => {
             {/* Add image here if available */}
           </div>
           <div className="opportunity-right">
-            <h3>Event: Startup Idea Pitch</h3>
+            <h3>PitchSpark'25</h3>
             <p>
-              Get ready for our first major event—<strong>Startup Idea Pitch</strong>—happening on
-              <strong> June 9th, 2025</strong>! In this exciting competition, student teams will
-              present their startup ideas to a panel of expert judges. The event aims to encourage
-              ideation, teamwork, and pitching skills, while giving students a platform to launch
-              innovative solutions to real-world problems. Don’t miss your chance to shine!
+              Get ready for our first major event—<strong>PitchSpark'25</strong>
+               is happening now, on <strong>June 12th, 2025</strong>! Student teams are currently
+                presenting their startup ideas to a panel of expert judges in this exciting competition.
+                 The event encourages ideation, teamwork, and pitching skills, while providing a platform 
+                for students to showcase innovative solutions to real-world problems.
+                 Stay tuned and witness the next wave of changemakers in action.
+               Don’t miss your chance to shine!
             </p>
           </div>
         </div>

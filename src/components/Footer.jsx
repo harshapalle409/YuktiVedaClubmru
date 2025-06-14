@@ -3,13 +3,13 @@ import './footerStyles.css';
 import { FaLinkedin, FaInstagram, FaYoutube, } from 'react-icons/fa6';
 import { FaMapMarkerAlt, FaEnvelope } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
-import logo from '../images/logo.jpg';
+import logowithname from '../images/logowithname.jpg';
 const Footer = () => {
   return (
     <footer className="club_footer__root">
       <div className="club_footer__top_section">
         <div className="club_footer__column">
-            <img className='footer-logo-image' src={logo} alt='YuktiVeda_Club_logo'/>
+            <img className='footer-logo-image' src={logowithname} alt='YuktiVeda_Club_logo'/>
         </div><div className="club_footer__column">
           <h4 className="club_footer__heading">OUR INITIATIVES</h4>
           <ul>

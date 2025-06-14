@@ -1,5 +1,6 @@
 import React from 'react';
 import about_image from '../images/about_image.png';
+import aboutimg3 from '../images/aboutimg3.avif';
 import './aboutStyles.css';
 
 const About = () => {
@@ -7,7 +8,8 @@ const About = () => {
     <div className='yvclub-about-main-section'>
     <section className="yvclub-about-section" id="about">
       <div className="yvclub-about-right-container">
-        <img src={about_image} alt="about image" />
+        <img src={about_image} alt="about_image" />
+        <img src={aboutimg3} alt="about_image" />
       </div>
       <div className="yvclub-about-left-container">
         <h2 className="yvclub-about-title">About Yukti Veda</h2>

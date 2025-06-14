@@ -7,10 +7,12 @@ import Initiatives from './components/Initiatives';
 import Gallery from './components/Gallery';
 import Footer from './components/Footer';
 import Home1 from './components/Home1';
+import ScrollToTop from './components/ScrollToTop';
 
 const App = () => {
   return (
     <Router>
+      <ScrollToTop />
       <Navbar />
       {/* <div style={{ padding: '20px' }}> */}
         <Routes>

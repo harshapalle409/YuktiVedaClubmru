@@ -82,7 +82,7 @@
 import React, { useRef , useState } from 'react';
 import emailjs from '@emailjs/browser';
 import DevProfileCard from './DevProfileCard';
-import profileImg from '../images/download.png'; // Replace with actual image path
+// import profileImg from '../images/download.png';  Replace with actual image path
 import sandeshimg from '../images/sandeshimg.jpg';
 import madhuimg from '../images/madhuimg.jpg';
 import lasyaimg from '../images/lasyaimg.jpg';
@@ -98,6 +98,7 @@ import shiwaniimg from '../images/shiwaniimg.jpg';
 import harsithimg from '../images/harsithimg.jpg';
 import Akhilaimg from '../images/Akhilaimg.jpg';
 import Vishnuimg from '../images/Vishnuimg.jpg';
+import CharanImg from '../images/CharanImg.jpg';
 import './contactStyles.css';
 const Contact = () => {
   const form = useRef();
@@ -250,9 +251,9 @@ const Contact = () => {
         /><DevProfileCard
           name="V. Charan"
           title="Treasurer"
-          image={profileImg}
-          linkedin="https://linkedin.com/in/sandesh-chowdary"
-          email="madhu@example.com"
+          image={CharanImg}
+          linkedin="https://www.linkedin.com/in/charan-venishetti-b16715235/"
+          email="2311CS030561@mallareddyuniversity.ac.in"
         /><DevProfileCard
           name="A. Akshaya "
           title="Executive Member"

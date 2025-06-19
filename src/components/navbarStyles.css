@@ -59,18 +59,26 @@
 }
 
 @media (max-width: 768px) {
+  .navbar_unique_logo {
+  font-size: 21px;
+}
+.navber-logo-image {
+  margin-right: 5px;
+}
   .navbar_unique_toggle {
     display: block;
   }
 
   .navbar_unique_links {
     display: none;
+    z-index: 1000;
     flex-direction: column;
     position: absolute;
-    top: 70px;
+    top: 30px;
     left: 0;
     right: 0;
-    background-color: #FF6B35;
+    color: #EAEAEA;
+    background-color: #2B2134;
     padding: 1rem 0;
   }
 

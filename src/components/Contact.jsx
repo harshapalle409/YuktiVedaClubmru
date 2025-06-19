@@ -184,7 +184,7 @@ const Contact = () => {
           name="Dr.GS. Naveen Kumar"
           title="Dean of Data Science"
           image={deanimg}
-          linkedin="https://linkedin.com/in/sandesh-chowdary"
+          linkedin="#"
           email="dean.ds@mallareddyuniversity.ac.in"
           />
           </div>
@@ -200,7 +200,7 @@ const Contact = () => {
           name="Ms. Shiwani Kesarwani"
           title="Faculty coordinator"
           image={shiwaniimg}
-          linkedin="https://linkedin.com/in/sandesh-chowdary"
+          linkedin="#"
           email="shiwani@mallareddyuniversity.ac.in"
         />
         </div>

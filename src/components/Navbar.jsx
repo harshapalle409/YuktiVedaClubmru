@@ -20,7 +20,7 @@ const Navbar = () => {
         className="navbar_unique_toggle"
         onClick={() => setMenuOpen(!menuOpen)}
       >
-        ☰
+        {menuOpen ? '✕' : '☰'}
       </div>
       <ul className={`navbar_unique_links ${menuOpen ? 'show' : ''}`}>
         <li><NavLink to="/" className={({ isActive }) => isActive ? "active" : ""} onClick={closeMenu}>HOME</NavLink></li>

@@ -7,7 +7,7 @@ const Gallery = () => {
   return (
     <div className="gallery_container">
       <div className="gallery_des">
-        <h1 >GALLERY</h1>
+        <h1 className='heading1' >GALLERY</h1>
         <p>Our Gallery showcases Yukti Veda Club’s vibrant journey — from our inspiring inauguration to snapshots and
          AV highlights of events filled with learning, creativity, and collaboration. Each moment reflects the spirit,
           energy, and growth of our club community.

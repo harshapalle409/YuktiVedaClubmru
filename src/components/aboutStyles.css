@@ -6,7 +6,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 40px 20px;
+  /* padding: 40px 20px; */
   /* background-color: #f9f9f9; */
   max-width: 1200px; /* Set a max-width */
   margin: 0 auto; /* Center the section */

@@ -10,16 +10,18 @@
 .gallery_des{
   font-family: Lora;
   font-size: 1.1rem ;
-  padding: 20px;
+  /* padding: 20px; */
   align-items: center;
   text-align: center;
   font-style: normal;
   color:#212529;
+  margin-left: 60px;
+  margin-right: 60px;
 }
+
 .heading1{
-  font-family:poppins;
-  font-style: normal;
-  font-size:2.5rem;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  margin:0px;
 }
 .gallery_item {
   max-width: 500px;
@@ -37,7 +39,7 @@
 
 .gallery_item h1 {
   font-size: 1.5rem;
-  color: #D4AF37;
+  color: #a67c00;
   margin-bottom: 10px;
   font-family:poppins;
   font-style: normal;

@@ -1,6 +1,6 @@
 import React from 'react';
 import './DevProfileCard.css';
-import { FaLinkedinIn, FaEnvelope, FaInstagram } from 'react-icons/fa6';
+import { FaLinkedinIn, FaEnvelope } from 'react-icons/fa6';
 
 const DevProfileCard = ({ name, title, image, linkedin, email, instagram }) => {
   return (
@@ -10,7 +10,12 @@ const DevProfileCard = ({ name, title, image, linkedin, email, instagram }) => {
       <p className="dev-card-desc-pink">{title}</p>
       <div className="dev-card-icons-pink">
         {linkedin && (
-          <a href={linkedin} className="dev-icon-link" target="_blank" rel="noopener noreferrer">
+          <a href={linkedin === "#" ? "#" : linkedin} // Keep original href or #
+            className="dev-icon-link"
+            onClick={(e) => {
+              if (linkedin === "#") e.preventDefault(); // Block if href="#"
+              // (Optional) Add other conditions here
+            }} target="_blank" rel="noopener noreferrer">
             <FaLinkedinIn />
           </a>
         )}

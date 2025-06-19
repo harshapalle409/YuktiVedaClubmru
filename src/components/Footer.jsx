@@ -14,7 +14,7 @@ const Footer = () => {
           <h4 className="club_footer__heading">OUR INITIATIVES</h4>
           <ul>
             <li>Inauguration: Yukti Veda Club</li>
-            <li>Event: Startup Idea Pitch</li>
+            <li>Event: PitchSpark'25</li>
           </ul>
         </div>
 
@@ -44,9 +44,9 @@ const Footer = () => {
       <div className="club_footer__social_section">
   <p>Get connected with us on social networks:</p>
   <div className="club_footer__social_icons">
-    <a href="https://www.linkedin.com/in/yuktivedaclub" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
-    <a href="https://www.instagram.com/yuktivedaclub" target="_blank" rel="noopener noreferrer"><FaInstagram /></a>
-    <a href="https://www.youtube.com/@yuktivedaclub" target="_blank" rel="noopener noreferrer"><FaYoutube /></a>
+    <a href="https://www.linkedin.com/in/yuktivedaclub" target="_blank" rel="noopener noreferrer" onClick={(e) => e.preventDefault()}><FaLinkedin /></a>
+    <a href="https://www.instagram.com/yuktivedaclub" target="_blank" rel="noopener noreferrer" onClick={(e) => e.preventDefault()}><FaInstagram /></a>
+    <a href="https://www.youtube.com/@yuktivedaclub" target="_blank" rel="noopener noreferrer"onClick={(e) => e.preventDefault()}><FaYoutube /></a>
   </div>
 </div>
 

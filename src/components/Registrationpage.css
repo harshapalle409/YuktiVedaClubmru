@@ -1,0 +1,81 @@
+.yvcregistration-form {
+  max-width: 700px;
+  margin: auto;
+  background-color: white;
+  padding: 25px 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.yvcregistration-title {
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.yvcregistration-subtitle {
+  color: #333;
+  margin-bottom: 10px;
+  margin-top: 20px;
+}
+
+.yvcregistration-member-title {
+  color: #444;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+.yvcregistration-label {
+  display: block;
+  margin-top: 15px;
+  margin-bottom: 5px;
+  font-weight: 600;
+}
+
+.yvcregistration-input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 5px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.yvcregistration-select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 5px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+  background-color: #fff;
+}
+
+.yvcregistration-button {
+  margin-top: 20px;
+  background-color: #4A90E2;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  font-size: 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.yvcregistration-button:hover {
+  background-color: #357ABD;
+}
+
+.yvcregistration-members-container {
+  margin-top: 20px;
+}
+
+.yvcregistration-member-container {
+  margin-bottom: 20px;
+}
+
+@media (max-width: 600px) {
+  .yvcregistration-form {
+    padding: 20px;
+  }
+}

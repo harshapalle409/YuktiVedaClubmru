@@ -66,6 +66,8 @@
 
 /* Right Section (Text) */
 .opportunity-right {
+  display: flex;
+  flex-direction: column;
   flex: 1;
   min-width: 80%;
   padding: 20px;
@@ -114,6 +116,21 @@
   line-height: 1.4;
   color: #333;
   text-align: justify;
+}
+.yvclub-registration-button{
+  margin-right: 100px;
+  align-self: flex-end;
+  color: #2B2134;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 60px ;
+  border: 2px solid #D4AF37;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.yvclub-registration-button:hover {
+  background-color:#D4AF37; 
 }
 
 /* Responsive */

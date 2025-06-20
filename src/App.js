@@ -8,6 +8,7 @@ import Gallery from './components/Gallery';
 import Footer from './components/Footer';
 import Home1 from './components/Home1';
 import ScrollToTop from './components/ScrollToTop';
+import Registrationpage from './components/Registrationpage';
 
 const App = () => {
   return (
@@ -21,6 +22,7 @@ const App = () => {
           <Route path="/contact" element={<Contact />} />
           <Route path="/initiatives" element={<Initiatives />} />
           <Route path="/gallery" element={<Gallery />} />
+          <Route path="/registration" element={<Registrationpage />} />
         </Routes>
       {/* </div> */}
       <Footer/>

@@ -52,7 +52,7 @@
 
 .yvcregistration-button {
   margin-top: 20px;
-  background-color: #4A90E2;
+  background-color: #a67c00;
   color: white;
   border: none;
   padding: 12px 20px;
@@ -60,11 +60,13 @@
   border-radius: 6px;
   cursor: pointer;
   width: 100%;
+  transition: background 0.3s ease;
+
+}
+.yvcregistration-button:hover {
+  background-color:#D4AF37; 
 }
 
-.yvcregistration-button:hover {
-  background-color: #357ABD;
-}
 
 .yvcregistration-members-container {
   margin-top: 20px;
@@ -77,5 +79,8 @@
 @media (max-width: 600px) {
   .yvcregistration-form {
     padding: 20px;
+  }
+  .yvcregistration-input {
+    width: 93%;
   }
 }

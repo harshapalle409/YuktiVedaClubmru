@@ -80,10 +80,17 @@
     color: #EAEAEA;
     background-color: #2B2134;
     padding: 1rem 0;
-  }
+
+    /* transform: translateY(-10px);
+    pointer-events: none;
+    transition: opacity 0.4s ease, transform 0.4s ease;*/
+  } 
 
   .navbar_unique_links.show {
     display: flex;
+    /* opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto; */
   }
 
   .navbar_unique_links li {

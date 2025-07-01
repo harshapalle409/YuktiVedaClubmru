@@ -32,7 +32,12 @@ const Footer = () => {
 
         <div className="club_footer__column">
           <h4 className="club_footer__heading">CONTACT</h4>
-          <p><FaMapMarkerAlt className="club_footer__icon" />Main Block, Malla Reddy University, Maisammaguda,Hyderabad 500100 </p>
+          <p>
+            <FaMapMarkerAlt className="club_footer__icon" />
+              <Link to="/location" className="club_footer__link">
+                 Main Block, Malla Reddy University, Maisammaguda, Hyderabad 500100
+              </Link>
+          </p>
           <p><a href="mailto:support@yuktivedaclub.in" className="club_footer__email">
             <FaEnvelope className="club_footer__icon" />
             yuktivedaclub@mallareddyuniversity.ac.in

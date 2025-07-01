@@ -71,7 +71,9 @@
     padding: 20px;
     gap: 20px;
   }
-
+  .gallery_des {
+    margin: 0 10px;
+  }
   .gallery_item {
     width: 100%;
     padding: 16px;

@@ -54,15 +54,60 @@ const Registrationpage = () => {
     return members;
   };
 
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    const form = e.target;
+
+    const team = {
+      teamName: form.teamName.value,
+      leaderName: form.leaderName.value,
+      leaderRoll: form.leaderRoll.value,
+      leaderEmail: form.leaderEmail.value,
+      leaderPhone: form.leaderPhone.value,
+      leaderYear: form.leaderYear.value,
+      leaderDept: form.leaderDept.value,
+      leaderSection: form.leaderSection.value
+    };
+
+    const members = [];
+    for (let i = 1; i <= teamSize; i++) {
+      members.push({
+        name: form[`member${i}Name`].value,
+        roll: form[`member${i}Roll`].value,
+        email: form[`member${i}Email`].value,
+        phone: form[`member${i}Phone`].value,
+        year: form[`member${i}Year`].value,
+        dept: form[`member${i}Dept`].value,
+        section: form[`member${i}Section`].value
+      });
+    }
+
+    try {
+      const response = await fetch('http://localhost:5000/register', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ team, members })
+      });
+
+      const result = await response.text();
+      alert(result);
+      form.reset();
+      setTeamSize('');
+    } catch (error) {
+      console.error('Submission error:', error);
+      alert('Something went wrong. Please try again.');
+    }
+  };
+
   return (
-    <form id="registrationForm" className="yvcregistration-form">
+    <form className="yvcregistration-form" onSubmit={handleSubmit}>
       <h2 className="yvcregistration-title">PitchSpark'25 Team Registration</h2>
 
       {/* Team Info */}
       <label className="yvcregistration-label">Team Name:</label>
       <input type="text" name="teamName" className="yvcregistration-input" required />
 
-      {/* Team Leader Details */}
+      {/* Leader Info */}
       <h3 className="yvcregistration-subtitle">Team Leader Details</h3>
 
       <label className="yvcregistration-label">Name:</label>
@@ -103,7 +148,7 @@ const Registrationpage = () => {
 
       {/* Team Size */}
       <label className="yvcregistration-label">Number of Team Members:</label>
-      <select id="teamSize" onChange={updateMemberFields} value={teamSize} className="yvcregistration-select" required>
+      <select onChange={updateMemberFields} value={teamSize} className="yvcregistration-select" required>
         <option value="">Select</option>
         <option value="0">0</option>
         <option value="1">1</option>
@@ -111,8 +156,8 @@ const Registrationpage = () => {
         <option value="3">3</option>
       </select>
 
-      {/* Dynamic Members Area */}
-      <div id="membersContainer" className="yvcregistration-members-container">
+      {/* Member Fields */}
+      <div className="yvcregistration-members-container">
         {renderMemberFields()}
       </div>
 

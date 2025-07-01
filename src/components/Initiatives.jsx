@@ -46,7 +46,7 @@ const Initiatives = () => {
                  Stay tuned and witness the next wave of changemakers in action.
                Don’t miss your chance to shine!
             </p>
-                <a href="registration" className="yvclub-registration-button">Register</a>
+                <a href="registration" className="yvclub-registration-button">Register now</a>
           </div>
         </div>
       </div>

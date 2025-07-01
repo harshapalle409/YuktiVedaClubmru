@@ -9,6 +9,7 @@ import Footer from './components/Footer';
 import Home1 from './components/Home1';
 import ScrollToTop from './components/ScrollToTop';
 import Registrationpage from './components/Registrationpage';
+import Location from './components/Location';
 
 const App = () => {
   return (
@@ -23,6 +24,7 @@ const App = () => {
           <Route path="/initiatives" element={<Initiatives />} />
           <Route path="/gallery" element={<Gallery />} />
           <Route path="/registration" element={<Registrationpage />} />
+          <Route path="/location" element={<Location />} />
         </Routes>
       {/* </div> */}
       <Footer/>

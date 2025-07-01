@@ -25,14 +25,14 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 24px;
-  margin-bottom: 40px;
+  gap: 20px;
+  margin-top: 20px;
 }
 
 .grid-cards-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr); /* Default for desktop */
-  gap: 24px;
+  gap: 20px;
   justify-items: center;
   padding: 0 10px;
 }

@@ -112,8 +112,8 @@ const Contact = () => {
     e.preventDefault();
 
     emailjs
-      .sendForm('service_qw1duhq', 'template_m8fr60g', form.current, {
-        publicKey: 'NwPEuCR8G9jdnGK28',
+      .sendForm('service_ujqq6bo', 'template_pd9amog', form.current, {
+        publicKey: 'muQSSsMB-7XiMG56q',
       })
       .then(
         () => {
@@ -128,6 +128,7 @@ const Contact = () => {
   const [formData, setFormData] = useState({
     user_name: '',
     user_email: '',
+    college: '',
     message: ''
   });
   
@@ -159,6 +160,7 @@ const Contact = () => {
       setFormData({
         user_name: '',
         user_email: '',
+        college: '',
         message: ''
       });
       
@@ -206,7 +208,7 @@ const Contact = () => {
         </div>
       <h2 className='heading2'>Our Team</h2>
       {/* First two cards side by side */}
-      <div className="top-two-cards-container">
+      {/* <div className="top-two-cards-container">
         <DevProfileCard
           name="N. Sandesh Chowdary"
           title="President"
@@ -221,7 +223,7 @@ const Contact = () => {
           linkedin=" https://www.linkedin.com/in/maddireddygari-madhu-varsha-0a7594348"
           email="2311cs030299@mallareddyuniversity.ac.in "
         />
-      </div>
+      </div> */}
 
       {/* 3x3 grid cards */}
       <div className="grid-cards-container">
@@ -235,6 +237,20 @@ const Contact = () => {
           />
           
         ))} */}
+        <DevProfileCard
+          name="N. Sandesh Chowdary"
+          title="President & Web Developer"
+          image={sandeshimg}
+          linkedin="https://www.linkedin.com/in/sandesh-chowdary-953468277/"
+          email="2311CS030384@mallareddyuniversity.ac.in"
+        />
+        <DevProfileCard
+          name="M. Madhu Varsha "
+          title="Vice President"
+          image={madhuimg}
+          linkedin=" https://www.linkedin.com/in/maddireddygari-madhu-varsha-0a7594348"
+          email="2311cs030299@mallareddyuniversity.ac.in "
+        />
         <DevProfileCard
           name="K. Lakshmi Akhila"
           title="Secretary"
@@ -254,6 +270,12 @@ const Contact = () => {
           image={CharanImg}
           linkedin="https://www.linkedin.com/in/charan-venishetti-b16715235/"
           email="2311CS030561@mallareddyuniversity.ac.in"
+        /><DevProfileCard
+          name="P. Harsha"
+          title="Web Developer"
+          image={harshaimg}
+          linkedin="https://www.linkedin.com/in/harsha-palle-1b095b284?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+          email="2311cs030409@mallareddyuniversity.ac.in"
         /><DevProfileCard
           name="A. Akshaya "
           title="Executive Member"
@@ -299,13 +321,7 @@ const Contact = () => {
           linkedin=" https://www.linkedin.com/in/kavya-srinivas-0801k?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
           email="2311cs030543@mallareddyuniversity.ac.in "
         />
-        <DevProfileCard
-          name="P. Harsha"
-          title="Web Developer"
-          image={harshaimg}
-          linkedin="https://www.linkedin.com/in/harsha-palle-1b095b284?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
-          email="2311cs030409@mallareddyuniversity.ac.in"
-        /></div>
+        </div>
       </div>
       <br/>
       <br/>
@@ -332,6 +348,18 @@ const Contact = () => {
                 onChange={handleChange}
                 className="yvclub_contact_form_input"
                 placeholder="Enter email address"
+                required
+              />
+            </div>
+
+            <div className="yvclub_contact_form_group">
+              <input
+                type="text"
+                name="college"
+                value={formData.college}
+                onChange={handleChange}
+                className="yvclub_contact_form_input"
+                placeholder="Enter your College/Institute name"
                 required
               />
             </div>

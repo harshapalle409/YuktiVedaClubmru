@@ -1,6 +1,7 @@
 import React from 'react';
 import './initiativesStyles.css';
 import inaugurationPoster from '../images/Yuktivedaclub_inuagration_poster.jpg';
+import PitchSpark25 from '../images/PitchSpark25.jpg';
 
 const Initiatives = () => {
   return (
@@ -32,8 +33,8 @@ const Initiatives = () => {
 
         {/* Startup Idea Pitch */}
         <div className="opportunity-card">
-          <div className="opportunity-left poster-placeholder dark-bg">
-            {/* Add image here if available */}
+          <div className="opportunity-left ">
+            <img className="opportunity-left-img" src={PitchSpark25} alt="Inauguration Poster" />
           </div>
           <div className="opportunity-right">
             <h3>PitchSpark'25</h3>
@@ -46,9 +47,23 @@ const Initiatives = () => {
                  Stay tuned and witness the next wave of changemakers in action.
                Don’t miss your chance to shine!
             </p>
-                <a href="registration" className="yvclub-registration-button">Register now</a>
           </div>
         </div>
+
+        <div className="opportunity-card">
+          <div className="opportunity-left poster-placeholder purple-bg">
+            {/* <img className="opportunity-left-img" src={inaugurationPoster} alt="Inauguration Poster" /> */}
+          </div>
+          <div className="opportunity-right">
+            <h3>IDEA HUNT 2K25 – Innovation Challenge</h3>
+            <p>Organized by <strong>Yukti Veda Club</strong> (Dept. of Data Science), IDEA HUNT 2K25 is happening on <strong>August 4th, 2025</strong>. This event offers a platform for students to pitch their startup ideas, business plans, and prototypes to a panel of expert judges.
+                It’s designed to spark innovation, build teamwork, and push participants beyond their comfort zones. Winners receive certificates and a chance to make their ideas count.
+                Think big. Pitch smart. Lead the change.
+            </p>
+             <a href="registration" className="yvclub-registration-button">Register now</a>
+          </div>
+        </div>
+        
       </div>
     </div>
   );

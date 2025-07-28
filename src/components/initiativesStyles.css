@@ -81,11 +81,15 @@
   font-family:poppins;
   font-weight: 600;
 }
+.opportunity-left{
+  background-color: #fff;
+}
 .opportunity-left-img {
   width: 100%;
   height: auto;
   object-fit: contain;
   display: block;
+  border-radius: 12px;
 }
 
 /* Color backgrounds for placeholders */
@@ -118,7 +122,7 @@
   text-align: justify;
 }
 .yvclub-registration-button{
-  margin-right: 100px;
+  margin-right: 50px;
   align-self: flex-end;
   color: #2B2134;
   padding: 10px 20px;

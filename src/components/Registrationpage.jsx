@@ -11,7 +11,7 @@ const Registrationpage = () => {
   const renderMemberFields = () => {
     const members = [];
     const sectionOptions = ['Alpha', 'Beta', 'Gaama', 'Sigma', 'Omega', 'Delta', 'Zeta'];
-    const yearOptions = ['1st', '2nd', '3rd', '4th'];
+    const yearOptions = [ '2nd', '3rd', '4th'];
 
     for (let i = 1; i <= teamSize; i++) {
       members.push(
@@ -27,6 +27,9 @@ const Registrationpage = () => {
           <label className="yvcregistration-label">Email:</label>
           <input type="email" name={`member${i}Email`} className="yvcregistration-input" required />
 
+          <label className="yvcregistration-label">Personal Email:</label>
+          <input type="email" name={`member${i}PEmail`} className="yvcregistration-input" required />
+          
           <label className="yvcregistration-label">Phone Number:</label>
           <input type="tel" name={`member${i}Phone`} className="yvcregistration-input" required />
 
@@ -63,6 +66,7 @@ const Registrationpage = () => {
       leaderName: form.leaderName.value,
       leaderRoll: form.leaderRoll.value,
       leaderEmail: form.leaderEmail.value,
+      leaderPEmail: form.leaderPEmail.value,
       leaderPhone: form.leaderPhone.value,
       leaderYear: form.leaderYear.value,
       leaderDept: form.leaderDept.value,
@@ -75,6 +79,7 @@ const Registrationpage = () => {
         name: form[`member${i}Name`].value,
         roll: form[`member${i}Roll`].value,
         email: form[`member${i}Email`].value,
+        pemail: form[`member${i}PEmail`].value,
         phone: form[`member${i}Phone`].value,
         year: form[`member${i}Year`].value,
         dept: form[`member${i}Dept`].value,
@@ -83,7 +88,7 @@ const Registrationpage = () => {
     }
 
     try {
-      const response = await fetch('http://localhost:5000/register', {
+      const response = await fetch('https://yuktivedaclubmrubackend-production.up.railway.app/register', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ team, members })
@@ -119,13 +124,15 @@ const Registrationpage = () => {
       <label className="yvcregistration-label">College Email:</label>
       <input type="email" name="leaderEmail" className="yvcregistration-input" required />
 
+      <label className="yvcregistration-label">Personal Email:</label>
+      <input type="email" name="leaderPEmail" className="yvcregistration-input" required />
+     
       <label className="yvcregistration-label">Phone Number:</label>
       <input type="tel" name="leaderPhone" className="yvcregistration-input" required />
 
       <label className="yvcregistration-label">Year:</label>
       <select name="leaderYear" className="yvcregistration-select" required>
         <option value="">Select Year</option>
-        <option value="1st">1st Year</option>
         <option value="2nd">2nd Year</option>
         <option value="3rd">3rd Year</option>
         <option value="4th">4th Year</option>
@@ -150,7 +157,6 @@ const Registrationpage = () => {
       <label className="yvcregistration-label">Number of Team Members:</label>
       <select onChange={updateMemberFields} value={teamSize} className="yvcregistration-select" required>
         <option value="">Select</option>
-        <option value="0">0</option>
         <option value="1">1</option>
         <option value="2">2</option>
         <option value="3">3</option>

@@ -5,7 +5,7 @@ const Registrationpage = () => {
   const [teamSize, setTeamSize] = useState('');
   const API_BASE_URL = process.env.REACT_APP_API_URL || 'http://localhost:5000'; // Default for local dev
 
-team
+
   const updateMemberFields = (e) => {
     setTeamSize(parseInt(e.target.value));
   };

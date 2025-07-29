@@ -4,7 +4,8 @@ import './Registrationpage.css';
 const Registrationpage = () => {
   const [teamSize, setTeamSize] = useState('');
   const API_BASE_URL = process.env.REACT_APP_API_URL || 'http://localhost:5000'; // Default for local dev
-
+  // Build the correct, absolute URL
+  const endpoint = `${API_BASE_URL}/register`;
 
   const updateMemberFields = (e) => {
     setTeamSize(parseInt(e.target.value));
@@ -29,9 +30,9 @@ const Registrationpage = () => {
           <label className="yvcregistration-label">Email:</label>
           <input type="email" name={`member${i}Email`} className="yvcregistration-input" required />
 
-          <label className="yvcregistration-label">Personal Email:</label>
+          {/* <label className="yvcregistration-label">Personal Email:</label>
           <input type="email" name={`member${i}PEmail`} className="yvcregistration-input" required />
-          
+           */}
           <label className="yvcregistration-label">Phone Number:</label>
           <input type="tel" name={`member${i}Phone`} className="yvcregistration-input" required />
 
@@ -68,7 +69,7 @@ const Registrationpage = () => {
       leaderName: form.leaderName.value,
       leaderRoll: form.leaderRoll.value,
       leaderEmail: form.leaderEmail.value,
-      leaderPEmail: form.leaderPEmail.value,
+      // leaderPEmail: form.leaderPEmail.value,
       leaderPhone: form.leaderPhone.value,
       leaderYear: form.leaderYear.value,
       leaderDept: form.leaderDept.value,
@@ -81,7 +82,7 @@ const Registrationpage = () => {
         name: form[`member${i}Name`].value,
         roll: form[`member${i}Roll`].value,
         email: form[`member${i}Email`].value,
-        pemail: form[`member${i}PEmail`].value,
+        // pemail: form[`member${i}PEmail`].value,
         phone: form[`member${i}Phone`].value,
         year: form[`member${i}Year`].value,
         dept: form[`member${i}Dept`].value,
@@ -89,13 +90,18 @@ const Registrationpage = () => {
       });
     }
 
+    // try {
+    //   const response = await fetch(`${API_BASE_URL}/register`, {
+    //     method: 'POST',
+    //     headers: { 'Content-Type': 'application/json' },
+    //     body: JSON.stringify({ team, members })
+    //   });
     try {
-      const response = await fetch(`${API_BASE_URL}/register`, {
+      const response = await fetch(endpoint, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ team, members })
       });
-
       const result = await response.text();
       alert(result);
       form.reset();
@@ -126,9 +132,9 @@ const Registrationpage = () => {
       <label className="yvcregistration-label">College Email:</label>
       <input type="email" name="leaderEmail" className="yvcregistration-input" required />
 
-      <label className="yvcregistration-label">Personal Email:</label>
+      {/* <label className="yvcregistration-label">Personal Email:</label>
       <input type="email" name="leaderPEmail" className="yvcregistration-input" required />
-     
+      */}
       <label className="yvcregistration-label">Phone Number:</label>
       <input type="tel" name="leaderPhone" className="yvcregistration-input" required />
 

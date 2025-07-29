@@ -30,9 +30,9 @@ const Registrationpage = () => {
           <label className="yvcregistration-label">Email:</label>
           <input type="email" name={`member${i}Email`} className="yvcregistration-input" required />
 
-          {/* <label className="yvcregistration-label">Personal Email:</label>
-          <input type="email" name={`member${i}PEmail`} className="yvcregistration-input" required />
-           */}
+          <label className="yvcregistration-label">Personal Email:</label>
+          <input type="email" name={`member${i}PersonalEmail`} className="yvcregistration-input" required />
+          
           <label className="yvcregistration-label">Phone Number:</label>
           <input type="tel" name={`member${i}Phone`} className="yvcregistration-input" required />
 
@@ -69,7 +69,7 @@ const Registrationpage = () => {
       leaderName: form.leaderName.value,
       leaderRoll: form.leaderRoll.value,
       leaderEmail: form.leaderEmail.value,
-      // leaderPEmail: form.leaderPEmail.value,
+      leaderPersonalEmail: form.leaderPersonalEmail.value,
       leaderPhone: form.leaderPhone.value,
       leaderYear: form.leaderYear.value,
       leaderDept: form.leaderDept.value,
@@ -82,7 +82,7 @@ const Registrationpage = () => {
         name: form[`member${i}Name`].value,
         roll: form[`member${i}Roll`].value,
         email: form[`member${i}Email`].value,
-        // pemail: form[`member${i}PEmail`].value,
+        personalEmail: form[`member${i}PersonalEmail`].value,
         phone: form[`member${i}Phone`].value,
         year: form[`member${i}Year`].value,
         dept: form[`member${i}Dept`].value,
@@ -114,7 +114,7 @@ const Registrationpage = () => {
 
   return (
     <form className="yvcregistration-form" onSubmit={handleSubmit}>
-      <h2 className="yvcregistration-title">PitchSpark'25 Team Registration</h2>
+      <h2 className="yvcregistration-title">IDEATHON 2K25 Team Registration</h2>
 
       {/* Team Info */}
       <label className="yvcregistration-label">Team Name:</label>
@@ -132,9 +132,9 @@ const Registrationpage = () => {
       <label className="yvcregistration-label">College Email:</label>
       <input type="email" name="leaderEmail" className="yvcregistration-input" required />
 
-      {/* <label className="yvcregistration-label">Personal Email:</label>
-      <input type="email" name="leaderPEmail" className="yvcregistration-input" required />
-      */}
+      <label className="yvcregistration-label">Personal Email:</label>
+      <input type="email" name="leaderPersonalEmail" className="yvcregistration-input" required />
+     
       <label className="yvcregistration-label">Phone Number:</label>
       <input type="tel" name="leaderPhone" className="yvcregistration-input" required />
 

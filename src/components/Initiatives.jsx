@@ -39,8 +39,8 @@ const Initiatives = () => {
           <div className="opportunity-right">
             <h3>PitchSpark'25</h3>
             <p>
-              Get ready for our first major event—<strong>PitchSpark'25</strong>
-               is happening now, on <strong>June 12th, 2025</strong>! Student teams are currently
+              Get ready for our first mini event—<strong>PitchSpark'25 </strong>
+               is happening now, on <strong>June 09th, 2025</strong>! Student teams are currently
                 presenting their startup ideas to a panel of expert judges in this exciting competition.
                  The event encourages ideation, teamwork, and pitching skills, while providing a platform 
                 for students to showcase innovative solutions to real-world problems.
@@ -55,8 +55,8 @@ const Initiatives = () => {
             {/* <img className="opportunity-left-img" src={inaugurationPoster} alt="Inauguration Poster" /> */}
           </div>
           <div className="opportunity-right">
-            <h3>IDEA HUNT 2K25 – Innovation Challenge</h3>
-            <p>Organized by <strong>Yukti Veda Club</strong> (Dept. of Data Science), IDEA HUNT 2K25 is happening on <strong>August 4th, 2025</strong>. This event offers a platform for students to pitch their startup ideas, business plans, and prototypes to a panel of expert judges.
+            <h3>IDEATHON 2K25 – Innovation Challenge</h3>
+            <p>Organized by <strong>Yukti Veda Club</strong> (Dept. of Data Science), IDEATHON 2K25 is happening on <strong>August 7th, 2025</strong>. This event offers a platform for students to pitch their startup ideas, business plans, and prototypes to a panel of expert judges.
                 It’s designed to spark innovation, build teamwork, and push participants beyond their comfort zones. Winners receive certificates and a chance to make their ideas count.
                 Think big. Pitch smart. Lead the change.
             </p>

@@ -2,6 +2,7 @@ import React from 'react';
 import './initiativesStyles.css';
 import inaugurationPoster from '../images/Yuktivedaclub_inuagration_poster.jpg';
 import PitchSpark25 from '../images/PitchSpark25.jpg';
+import IDEATHON2K25 from '../images/IDEATHON2K25.png';
 
 const Initiatives = () => {
   return (
@@ -52,11 +53,11 @@ const Initiatives = () => {
 
         <div className="opportunity-card">
           <div className="opportunity-left poster-placeholder purple-bg">
-            {/* <img className="opportunity-left-img" src={inaugurationPoster} alt="Inauguration Poster" /> */}
+            <img className="opportunity-left-img" src={IDEATHON2K25} alt="IDEATHON2K25 Poster" />
           </div>
           <div className="opportunity-right">
             <h3>IDEATHON 2K25 – Innovation Challenge</h3>
-            <p>Organized by <strong>Yukti Veda Club</strong> (Dept. of Data Science), IDEATHON 2K25 is happening on <strong>August 7th, 2025</strong>. This event offers a platform for students to pitch their startup ideas, business plans, and prototypes to a panel of expert judges.
+            <p>Organized by <strong>Yukti Veda Club & DATECH Club</strong> (Dept. of Data Science), IDEATHON 2K25 is happening on <strong>August 7th, 2025</strong>. This event offers a platform for students to pitch their startup ideas, business plans, and prototypes to a panel of expert judges.
                 It’s designed to spark innovation, build teamwork, and push participants beyond their comfort zones. Winners receive certificates and a chance to make their ideas count.
                 Think big. Pitch smart. Lead the change.
             </p>
